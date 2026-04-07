@@ -1,0 +1,113 @@
+/* Tipografía para Titulo y Cuerpo */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    font-family: 'Lora', serif;
+    min-height: 100vh;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Imagen de fondo con opacidad */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('imagen_fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* Estilos del header */
+header {
+    text-align: center;
+    padding: 2rem;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+}
+
+/* Menú de navegación */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+nav a {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #3f3f3f; 
+    color: white;
+}
+
+/* Secciones */
+.patriot {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+}
+
+.patriot img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1.5px solid #3f3f3f;
+}
+
+.patriot .content {
+    flex: 1;
+}
+
+.patriot p {
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin: 40px auto 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+}
+
+/* Reset y box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
